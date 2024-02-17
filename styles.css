@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-direction: row;
+  background-color: antiquewhite;
+  align-items: center; /* Center content horizontally */
+  justify-content: space-around; /* Space items evenly along the main axis */
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the start horizontally */
+  }
+  #logoBar {
+    width: 30vw;
+    height: 100vh;
+    justify-content: center;
+  }
+  #staffGallery {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+  }
+ 
+}
+
+hr {
+  width: 100%; /* Ensure the <hr> spans the full width */
+}
+
+#logoBar {
+  width: 30vw;
+  height: 100vh;
+  color: darkblue;
+  font-family: Futura;
+  /* display: flex;
+  flex-direction: column; */
+  justify-content: flex-start; /* Align content to the start vertically */
+  align-items: flex-start; /* Align content to the start horizontally */
+}
+
+#siteLogo {
+  width: 100%;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#staffGallery {
+  width: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+.galleryImage {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: lightblue;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
